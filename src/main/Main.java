@@ -45,5 +45,17 @@ public class Main {
             System.out.println(i + " " + animal);
             i++;
         }
+        cat.toGo();
+        cat.fly();
+        cat.swim();
+
+        Animal parrot = new Parrot("Кеша", new Owner("Джон Сильвер"),
+                LocalDate.of(2015,05,17 ), new Illness("Птичий грипп"));
+        parrot.swim();
+        parrot.fly();
+        parrot.toGo();
+
+        Animal fish=new Fish();
+        fish.fly();
     }
 }
