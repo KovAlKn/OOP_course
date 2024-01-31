@@ -11,6 +11,11 @@ public class Rat extends Animal{
     }
 
     @Override
+    public void eat() {
+        System.out.println("Rat is eating");
+    }
+
+    @Override
     public void fly() {
         System.out.println(nickName+": крыса не летает!");
     }

@@ -10,4 +10,8 @@ public class Duck extends Animal{
     public Duck() {
     }
 
+    @Override
+    public void eat() {
+        System.out.println("Duck is eating");
+    }
 }

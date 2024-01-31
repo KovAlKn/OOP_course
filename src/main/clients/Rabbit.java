@@ -11,6 +11,11 @@ public class Rabbit extends Animal {
     }
 
     @Override
+    public void eat() {
+        System.out.println("Кролик ест");
+    }
+
+    @Override
     public void fly() {
         System.out.println(nickName + ": крилик не летает!");
     }

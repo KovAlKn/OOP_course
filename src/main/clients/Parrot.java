@@ -11,6 +11,11 @@ public class Parrot extends Animal {
     }
 
     @Override
+    public void eat() {
+        System.out.println("Parrot is eating");
+    }
+
+    @Override
     public void swim() {
         System.out.println(nickName+ ": попугай не плавает!");;
     }

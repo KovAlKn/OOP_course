@@ -11,11 +11,11 @@ public class Fish extends Animal{
     }
 
     @Override
-    public void toGo() {
-        System.out.println(nickName+" : рыбы не ходят!");
+    public void eat() {
+        System.out.println("Fish is eating");
     }
 
-    @Override
+        @Override
     public void fly() {
         System.out.println(nickName+" :рыбы летают только в воде!");
     }

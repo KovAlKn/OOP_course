@@ -11,6 +11,11 @@ public class Turtle extends Animal{
     }
 
     @Override
+    public void eat() {
+        System.out.println("Turtle is eating");
+    }
+
+    @Override
     public void fly() {
         System.out.println(nickName+ " : черепаха не летает!");
     }

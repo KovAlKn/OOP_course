@@ -9,8 +9,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        Animal cat = new Animal("Барсик", new Owner("Сергей Петрович"),
-                LocalDate.of(2021, 10, 5), new Illness("Лишай"));
+        Animal cat = new Cat("Барсик", new Owner("Сергей Петрович"),
+                LocalDate.of(2021, 10, 5), new Illness("Лишай"),10D);
 
         System.out.println(cat.getOwner());
         System.out.println(cat.getNickName());
@@ -19,11 +19,6 @@ public class Main {
 
         cat.setIllness(new Illness(null));
         System.out.println(cat.getIllness());
-
-        Animal testAnimal = new Animal();
-        System.out.println(testAnimal.getNickName());
-
-        cat.lifeCycle();
 
         Animal catty = new Cat();
 
@@ -45,7 +40,7 @@ public class Main {
             System.out.println(i + " " + animal);
             i++;
         }
-        cat.toGo();
+//        cat.toGo();
         cat.fly();
         cat.swim();
 
@@ -53,7 +48,7 @@ public class Main {
                 LocalDate.of(2015,05,17 ), new Illness("Птичий грипп"));
         parrot.swim();
         parrot.fly();
-        parrot.toGo();
+//        parrot.toGo();
 
         Animal fish=new Fish();
         fish.fly();
