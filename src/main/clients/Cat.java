@@ -2,7 +2,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Cat extends Animal implements Goable, Huntable{
+public class Cat extends Animal implements Goable, Huntable, Swimable{
 
     Double discount;
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount) {
@@ -21,7 +21,7 @@ public class Cat extends Animal implements Goable, Huntable{
 
     @Override
     public void eat() {
-        System.out.println("Кошка поймала мишку и ест");
+        System.out.println("Кошка поймала мышку и ест");
     }
 
     public Double getDiscount() {
@@ -41,8 +41,9 @@ public class Cat extends Animal implements Goable, Huntable{
         return super.toString()+ "Discount("+discount+")";
     }
 
+
     @Override
-    public void fly() {
-        System.out.println(nickName+": коты не летают!");
+    public void swim() {
+        System.out.println("Кошка по кличке "+nickName+" плывет");
     }
 }

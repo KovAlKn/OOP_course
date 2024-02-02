@@ -2,7 +2,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Parrot extends Animal {
+public class Parrot extends Animal implements Goable, Flyable{
     public Parrot(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
@@ -16,7 +16,12 @@ public class Parrot extends Animal {
     }
 
     @Override
-    public void swim() {
-        System.out.println(nickName+ ": попугай не плавает!");;
+    public void toGo() {
+        System.out.println("Попгай по кличке "+nickName+" идет");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Попугай по кличке "+nickName+" летит");
     }
 }
