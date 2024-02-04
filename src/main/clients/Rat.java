@@ -2,7 +2,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Rat extends Animal implements Goable, Swimable{
+public class Rat extends Animal implements Gnawable, Swimable{
     public Rat(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
@@ -24,4 +24,7 @@ public class Rat extends Animal implements Goable, Swimable{
     public void swim() {
         System.out.println("Крыса по кличке "+nickName+" плывет");
     }
+
+    @Override
+    public void toGnaw() {System.out.println("Крыса по кличке "+nickName+" грызет");}
 }
