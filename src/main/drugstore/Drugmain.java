@@ -31,10 +31,25 @@ public class Drugmain {
         Collections.sort(components, Comparator.reverseOrder());
         System.out.println(components);
 
-//        Iterator<Component>iterator = p1;
-//
-//        while(iterator.hasNext()){
-//            System.out.println(p1.next().toString());
-//        }
+        System.out.println("==========Home work #3===========");
+        Pharmacy ph1= new Pharmacy();
+        ph1.addComponents(water,azitronite);
+        Pharmacy ph2 = new Pharmacy();
+        ph2.addComponents(water, penicillin);
+        Pharmacy ph3 = new Pharmacy();
+        ph3.addComponents(azitronite,penicillin);
+
+        ArrayList<Pharmacy>setOfPharmacy = new ArrayList<>();
+        setOfPharmacy.add(ph1);
+        setOfPharmacy.add(ph2);
+        setOfPharmacy.add(ph3);
+        System.out.println(setOfPharmacy);
+        Collections.sort(setOfPharmacy);
+        System.out.println(setOfPharmacy);
+
+        // Сортировка по общему весу компонентов
+        Collections.sort(setOfPharmacy, Comparator.comparing(Pharmacy::getTotalWeight));
+        System.out.println(setOfPharmacy);
+
     }
 }

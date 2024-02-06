@@ -11,6 +11,15 @@ public abstract class Component implements Comparable<Component> {
         this.power = power;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public Double getWeight() {
+        return weight;
+    }
+
+    public int getPower() { return power; }
     @Override
     public String toString() {
         return String.format("Title = %s, power = %s", title, power);

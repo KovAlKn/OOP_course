@@ -14,7 +14,6 @@ public class PharmacyTwo implements Iterable<Component> {
         }
     }
 
-
     @Override
     public Iterator<Component> iterator() {
         return new Iterator<Component>() {
